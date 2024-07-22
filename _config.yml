@@ -1,0 +1,13 @@
+# 仅做为演示配置
+
+hexo-seo-submit:
+  CI:
+    enable: true
+  google:
+    enable: true
+
+deploy:
+  - type: git
+    branch: master
+    repo: git@github.com:tardis-ksh/hexo-seo-submit-demo.git
+    ignore_hidden: false
