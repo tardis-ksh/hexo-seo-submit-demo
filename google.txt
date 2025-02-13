@@ -1,2 +1,2 @@
-https://ksh7.com/posts/react-router-v6-historyJump/
+https://ksh7.com/posts/react-router-v6-historyJump
 
