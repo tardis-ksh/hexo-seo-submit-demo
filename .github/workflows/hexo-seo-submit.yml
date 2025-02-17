@@ -42,8 +42,14 @@ jobs:
 
 
 
-      - name: push search engine google
+      - name: push search engine google@latest
         if: env.is_owner
         continue-on-error: true
         run: |
           npx hexo-seo-submit google -f google.txt -m ${{ secrets.google_client_email }} -k "${{ secrets.google_private_key }}"
+
+      - name: push search engine google@old
+        if: env.is_owner
+        continue-on-error: true
+        run: |
+          npx hexo-seo-submit@0.15.0 google -f google.txt -mail ${{ secrets.google_client_email }} -key "${{ secrets.google_private_key }}"
